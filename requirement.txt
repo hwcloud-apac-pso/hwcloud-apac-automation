@@ -1,0 +1,8 @@
+huaweicloudsdkecs
+huaweicloudsdkims
+huaweicloudsdksmn
+huaweicloudsdksms
+requests
+python-dotenv
+openpyxl
+pandas
