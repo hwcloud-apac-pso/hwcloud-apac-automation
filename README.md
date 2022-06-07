@@ -253,7 +253,9 @@ Before getting started, complete the following prerequisites:
 
 
 ### **5.5 Delete Images**
+Once the resources are no longer used, It’s a good idea to remove all the resources you created so Huawei Cloud doesn’t charge you for them. 
 
+#### **5.5.1 Delete Images**
 1. Run **delete_images.bat**. This batch file will execute **deleteImage.py** Python file.
 2.  **deleteImage.py** will read Image ID from **resourse_list.xlsx** Excel file and use the ID to delete Image in Huawei Cloud.
 </br>
@@ -263,8 +265,7 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Figure 5.9: delete_images.bat</i></p>
 </br>
 
-
-### **5.6 Delete ECS**
+#### ***Delete Server (ECS)***
 
 1.  Run **delete_servers.bat.** This batch file will execute **deleteServer.py** Python file. 
 2.  **deleteServer.py** will read server ID from **resourse_list.xlsx** Excel file use the ID to delete server in Huawei Cloud.
