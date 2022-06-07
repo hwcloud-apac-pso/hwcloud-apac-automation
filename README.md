@@ -186,7 +186,7 @@ Before getting started, complete the following prerequisites:
 </br>
 
 
-### **5.3 Write Configuration File**
+### **5.3 Configure Environment Variables**
 
 1. Run **config.bat**. This batch file will start Command Prompt and ask the user to input configuration as prompted.
 
