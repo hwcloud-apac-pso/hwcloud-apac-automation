@@ -221,7 +221,8 @@ Before getting started, complete the following prerequisites:
 ### **5.4 Create Images and ECS**
 
 1. Run **create_images_and_ecs.bat.** This batch file will execute **main.py** to create images and ECS.
-2. Input number of sheets to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. The **previous running** sheet number will also be shown in figure below. 
+2. Input sheet number to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. 
+3. The **previous running** sheet number will also be shown in command prompt to let user know the previous sheet number used  to created images and server.
  
 :warning: *Note: None in figure below indicate that the program never run before.
 
@@ -234,8 +235,9 @@ Before getting started, complete the following prerequisites:
 
 ### **5.5 Delete Images**
 
-1. Run *delete_images.bat*. This batch file will execute *deleteImage.py* to delete all created Images in Huawei Cloud.
-
+1. Run **delete_images.bat**. This batch file will execute **deleteImage.py** to delete all created Images in Huawei Cloud.
+2.  **deleteImage.py** will read Image ID from **resourse_list.xlsx** Excel file and use the ID to delete Image in Huawei Cloud.
+</br>
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_image_bat.png" alt="Batch file to delete images"/>
 </p>
@@ -245,10 +247,10 @@ Before getting started, complete the following prerequisites:
 
 ### **5.6 Delete ECS**
 
-1.  Run *delete_servers.bat.* This batch file will execute deleteServer.py to delete all created Servers in Huawei Cloud. 
-
+1.  Run **delete_servers.bat.** This batch file will execute **deleteServer.py** to delete all created Servers in Huawei Cloud. 
+2.  **deleteServer.py** will read server ID from **resourse_list.xlsx** Excel file use the ID to delete server in Huawei Cloud.
+</br>
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_server_bat.png" alt="Batch file to delete server"/>
 </p>
 <p align="center"><i>Figure 5.10: delete_servers.bat</i></p>
-</br>
