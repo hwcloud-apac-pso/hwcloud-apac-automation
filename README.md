@@ -1,6 +1,6 @@
-Automation on Elastic Cloud Server Provisioning using a created image from Cloud Backup and Recovery
+#Automation on Elastic Cloud Server Provisioning using a created image from Cloud Backup and Recovery
 
-**1. Introduction**
+##1. Introduction
 
 This Program will use Huawei Cloud Python SDK to automate the process of creating images from Cloud Backup and Recovery (CBR) and use the created image to provision Elastic Cloud Server (ECS) in Huawei Cloud.
  
