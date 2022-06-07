@@ -143,7 +143,7 @@ Before getting started, complete the following prerequisites:
 
 ### **5.1 Install Python 3**
 
-1. Open your web browser and navigate to the Downloads for [Windows section]([url](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).
+1. Open your web browser and navigate to the Downloads for [Windows section](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).
 2. Search for your desired version of Python. At the time of publishing this article, the latest Python 3 release is version 3.10.4, while the latest Python 2 release is version 2.7.18.
 
 <p align="center">
@@ -221,34 +221,32 @@ Before getting started, complete the following prerequisites:
 ### **5.4 Create Images and ECS**
 
 1. Run **create_images_and_ecs.bat.** This batch file will execute **main.py** to create images and ECS.
-2. Input number of sheets to determine which sheet in *ids_list.xlsx* to be used in creating images and servers. The **previous running** sheet number will also be shown in figure below. <span color="red">Note: None in figure below indicate that the program never run before.</span>
+2. Input number of sheets to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. The **previous running** sheet number will also be shown in figure below. <span color="red">Note: None in figure below indicate that the program never run before.</span>
+
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd.png" alt="Command Prompt"/>
+</p>
+<p align="center"><i>Figure 5.8: Command Prompt shows Previous running: None</i></p>
+</br>
 
 
-![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd.png?raw=true)
-Figure 4.8 : Command Prompt shows Previous running: None
-
-
-**4.5 Delete Images**
+### **5.5 Delete Images**
 
 1. Run *delete_images.bat*. This batch file will execute *deleteImage.py* to delete all created Images in Huawei Cloud.
 
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_image_bat.png" alt="Batch file to delete images"/>
+</p>
+<p align="center"><i>Figure 5.9: delete_images.bat</i></p>
+</br>
 
-![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_image_bat.png?raw=true)
 
-Figure 4.9 : delete_images.bat
-
-
-**4.6 Delete ECS**
+### **5.6 Delete ECS**
 
 1.  Run *delete_servers.bat.* This batch file will execute deleteServer.py to delete all created Servers in Huawei Cloud. 
 
-
-![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_server_bat.png?raw=true)
-                                            Figure 4.10 :  delete_servers.bat
-
-
- 
-
-5. Appendix 
-
-codeExcel.zip (https://apac-professional-services.quip.com/-/blob/ZeBAAAOBvv1/keRXxZ-xzYkYmFXuPjRaGA?name=codeExcel.zip) 
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_server_bat.png" alt="Batch file to delete server"/>
+</p>
+<p align="center"><i>Figure 5.10: delete_servers.bat</i></p>
+</br>
