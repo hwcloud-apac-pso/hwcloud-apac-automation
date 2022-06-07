@@ -265,7 +265,7 @@ Once the resources are no longer used, It’s a good idea to remove all the reso
 <p align="center"><i>Figure 5.9: delete_images.bat</i></p>
 </br>
 
-#### ***Delete Server (ECS)***
+#### **5.5.2 Delete Server (ECS)**
 
 1.  Run **delete_servers.bat.** This batch file will execute **deleteServer.py** Python file. 
 2.  **deleteServer.py** will read server ID from **resourse_list.xlsx** Excel file use the ID to delete server in Huawei Cloud.
