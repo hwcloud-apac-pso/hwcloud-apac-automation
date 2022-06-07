@@ -223,7 +223,7 @@ Before getting started, complete the following prerequisites:
 1. Run **create_images_and_ecs.bat.** This batch file will execute **main.py** to create images and ECS.
 2. Input number of sheets to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. The **previous running** sheet number will also be shown in figure below. 
  
-<p style="color:red;">Note: None in figure below indicate that the program never run before.</p>
+>*Note: None in figure below indicate that the program never run before.
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd.png" alt="Command Prompt"/>
