@@ -2,7 +2,7 @@
 
 ## **1. Introduction**
 
-This Program will use Huawei Cloud Python SDK to automate the process of creating images from Cloud Backup and Recovery (CBR), creating Elastic Cloud Server (ECS) from created images, and deleting images and elastic cloud server (ECS). :trollface:
+This Program will use Huawei Cloud Python SDK to automate the process of creating images from Cloud Backup and Recovery (CBR), creating Elastic Cloud Server (ECS) from created images, and deleting images and elastic cloud server (ECS).
  
 We are going to achieve the below objectives:
 1. Automate the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) using Huawei SDK.
