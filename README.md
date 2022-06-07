@@ -15,28 +15,29 @@ We are going to achieve the below objectives:
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
 </p>
 <p align="center" f><i>Figure 2.0: Solution Overview<i></p>
+ </br>
 
 ## **3. Prerequisites**
 
 Before getting started, complete the following prerequisites:
 
-1. To use *Huawei Cloud Python SDK*, you must have a Huawei Cloud account as well as the Access Key and Secret Key of the Huawei Cloud account. You can create an Access Key in the Huawei Cloud console. You can obtain the AK/SK pair for your account at *My credentials > Access keys > Create Access key.*** ** **
+1. To use **Huawei Cloud Python SDK**, you must have a Huawei Cloud account as well as the Access Key and Secret Key of the Huawei Cloud account. You can create an Access Key in the Huawei Cloud console. You can obtain the AK/SK pair for your account at **My credentials > Access keys > Create Access key.**
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/create_credentials.png" alt="Create Credentials"/>
 </p>
 <p align="center" f><i>Figure 3.0: Example of how to create Access Key<i></p>
+<br/>
 
-
-1. To use *Huawei Cloud Python SDK* to access the APIs of a specific service, please make sure you have activated the service in the Huawei Cloud console (https://console.huaweicloud.com/?locale=en-us) if needed.
-2. Huawei Cloud Python SDK requires *Python 3.3* *or later*, run the command *python --version* to check the version of Python. *If Python 3.3* or later is installed. skip step *4**.*
-3. Install Python 3 and add Python to *PATH.* Open your browser and navigate to the Downloads for Windows section (https://www.python.org/downloads/windows/) of the official Python website (https://www.python.org/).
+2. To use **Huawei Cloud Python SDK** to access the APIs of a specific service, please make sure you have activated the service in the Huawei Cloud console (https://console.huaweicloud.com/?locale=en-us) if needed.
+3. Huawei Cloud Python SDK requires **Python 3.3 or later**, run the command **python --version** to check the version of Python. If **Python 3.3 or later** is installed. skip **step 4**.
+4. Install Python 3 and add Python to **PATH.** Open your browser and navigate to the Downloads for Windows section (https://www.python.org/downloads/windows/) of the official Python website (https://www.python.org/).
 
  
 
-**3. Folder Content**
+## **3. Folder Content**
 
-**3.1 Batch File**
+### **3.1 Batch File**
 
 
 **Batch File**	
