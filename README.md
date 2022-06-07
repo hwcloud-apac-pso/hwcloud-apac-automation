@@ -14,7 +14,7 @@ We are going to achieve the below objectives:
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
 </p>
-<p align="center" f>_Figure 2.0: Solution Overview_****</p>
+<p align="center" f><i>Figure 2.0: Solution Overview</i></p>
 </br>
 
 ## **3. Prerequisites**
@@ -39,27 +39,38 @@ Before getting started, complete the following prerequisites:
 
 ### **4.1 Batch File**
 
+<table>
+  <tr>
+    <th>**Batch File**</th>
+    <th>**Functions**</th>
+  </tr>
+  <tr>
+    <td>config.bat</td>
+    <td>To input configuration parameter and save to *Code > config.env* file.</td>
+  </tr>
+  <tr>
+    <td>create_image_and_ecs.bat</td>
+    <td>Execute *main.py* python file to create Image from CBR backup and then use  the created image to provision ECS.</td>
+  </tr>
+ <tr>
+    <td>delete_servers.bat</td>
+    <td>Execute *deleteImage.py* to delete all Images from **resource_list.xlsx.**</td>
+  </tr>
+ <tr>
+    <td>delete_images.bat</td>
+    <td>Execute *deleteImage.py* to delete all Images from **resource_list.xlsx.**</td>
+  </tr>
+ <tr>
+    <td>install.bat</td>
+    <td>Install all the Python  Package defined in **requirement.txt.**</td>
+  </tr>
+</table>
 
-**Batch File**	
-**Function**
+<p align="center" f><i>Table 3.0 :  Batch File (.bat)</i></p>
+<br/>
 
-config.bat	To input configuration parameter and save to *Code > config.env* file.
 
-create_image_and_ecs.bat	
-Execute *main.py* python file to create Image from CBR backup and then use  the created image to provision ECS.
-
-delete_servers.bat	
-Execute *deleteServer.py* to delete all Servers from *resource_list.xlsx.*
-
-delete_images.bat	
-Execute *deleteImage.py* to delete all Images from *resource_list.xlsx.*
-
-install.bat	
-Install all the Python  Package defined in *requirement.txt.*
-
-Table 3.0 :  Batch File (.bat)
-
-**3.2 Python File**
+**4.2 Python File**
 
 
 **Python File**	
