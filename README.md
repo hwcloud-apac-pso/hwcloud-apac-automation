@@ -197,7 +197,7 @@ Before getting started, complete the following prerequisites:
 </br>
 
 <p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/get_vpc_id.png.png" alt="Obtain VPC ID"/>
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/get_vpc_id.png" alt="Obtain VPC ID"/>
 </p>
 <p align="center"><i>Figure 5.5: Example to obtain VPC ID</i></p>
 </br>
