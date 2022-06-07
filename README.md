@@ -21,7 +21,7 @@ We are going to achieve the below objectives:
 
 Before getting started, complete the following prerequisites:
 
-1. To use **Huawei Cloud Python SDK**, you must have a Huawei Cloud account as well as the Access Key and Secret Key of the Huawei Cloud account. You can create an Access Key in the Huawei Cloud console. You can obtain the AK/SK pair for your account at **My credentials > Access keys > Create Access key.**
+1. To use **Huawei Cloud Python SDK**, you must have a Huawei Cloud account as well as the Access Key and Secret Key of the Huawei Cloud account. You can create an Access Key in the Huawei Cloud console. You can obtain the :key: AK/SK pair for your account at **My credentials > Access keys > Create Access key.**
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/create_credentials.png" alt="Create Credentials"/>
@@ -223,7 +223,7 @@ Before getting started, complete the following prerequisites:
 1. Run **create_images_and_ecs.bat.** This batch file will execute **main.py** to create images and ECS.
 2. Input number of sheets to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. The **previous running** sheet number will also be shown in figure below. 
  
->*Note: None in figure below indicate that the program never run before.
+:warning: *Note: None in figure below indicate that the program never run before.
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd.png" alt="Command Prompt"/>
