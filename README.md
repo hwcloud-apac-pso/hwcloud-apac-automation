@@ -201,8 +201,8 @@ Before getting started, complete the following prerequisites:
 
 #### **5.3.2 Obtain VPC ID**
 
-1. On the console homepage, under *Network*, click *Virtual Private Cloud*.
-2. On the *Virtual Private Cloud* page, locate your mouse cursor on the VPC name
+1. On the console homepage, under **Network**, click **Virtual Private Cloud**.
+2. On the **Virtual Private Cloud** page, locate your mouse cursor on the VPC name
 3. The VPC ID will appear once the cursor hovers over the VPC name. After that, click the copy to clipboard icon beside the VPC ID to copy it.
 </br>
 
@@ -214,8 +214,8 @@ Before getting started, complete the following prerequisites:
 
 #### **5.3.3 Obtain Subnet ID**
 
-1. On the console homepage, under *Network*, click *Virtual Private Cloud*.
-2. On the navigation pane at the left, click *Subnets*.
+1. On the console homepage, under **Network**, click **Virtual Private Cloud**.
+2. On the navigation pane at the left, click **Subnets**.
 3. On the displayed Subnets page, locate your mouse cursor on the Subnets name.
 4. The subnet ID will appear once the cursor hovers over the subnet name. After that, click the copy to clipboard icon beside the subnet ID to copy it.
 </br>
