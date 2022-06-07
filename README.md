@@ -41,8 +41,8 @@ Before getting started, complete the following prerequisites:
 
 <table>
   <tr>
-    <th>**Batch File**</th>
-    <th>**Functions**</th>
+    <th><b>Batch File</b></th>
+    <th><b>Functions</b></th>
   </tr>
   <tr>
     <td>config.bat</td>
@@ -54,7 +54,7 @@ Before getting started, complete the following prerequisites:
   </tr>
  <tr>
     <td>delete_servers.bat</td>
-    <td>Execute *deleteImage.py* to delete all Images from **resource_list.xlsx.**</td>
+    <td>Execute *deleteImage.py* to delete all Images from <b>resource_list.xlsx.</b></td>
   </tr>
  <tr>
     <td>delete_images.bat</td>
