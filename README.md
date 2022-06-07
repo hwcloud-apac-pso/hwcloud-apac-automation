@@ -2,10 +2,10 @@
 
 ## **1. Introduction**
 
-This Program will use Huawei Cloud Python SDK to automate the process of creating images from Cloud Backup and Recovery (CBR) and use the created image to provision Elastic Cloud Server (ECS) in Huawei Cloud.
+This Program will use Huawei Cloud Python SDK to automate the process of creating images from Cloud Backup and Recovery (CBR), creating Elastic Cloud Server (ECS) from created images, and deleting images and elastic cloud server (ECS).
  
 We are going to achieve the below objectives:
-
+gg
 1. Automate the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) using Huawei SDK.
 2. Automate the process of creating an Elastic Cloud Server (ECS) from the created image using Huawei SDK.
 3. Automate the process of resource cleaning using Huawei SDK. </br>
@@ -13,10 +13,10 @@ We are going to achieve the below objectives:
 ## **2. Solution Overview**
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
-</p>
+</p
 <p align="center"><i>Figure 2.0: Solution Overview</i></p>
 </br>
-
+xgr
 ## **3. Prerequisites**
 
 Before getting started, complete the following prerequisites:
@@ -209,7 +209,7 @@ Before getting started, complete the following prerequisites:
 </br>
 
 
-2. The configuration parameter will pass to environment variable file in **Code > config.env**.
+2. The configuration parameter will pass to the environment variable file in **Code > config.env**.
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/config_env.png" alt="config.env"/>
@@ -222,9 +222,9 @@ Before getting started, complete the following prerequisites:
 
 1. Run **create_images_and_ecs.bat.** This batch file will execute **main.py** to create images and ECS.
 2. Input sheet number to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. 
-3. The **previous running** sheet number will also be shown in command prompt to let user know the previous sheet number used  to created images and server.
+3. The **previous running** sheet number will also be shown in the command prompt to let the user know which number of the sheet is previously used to create images and server.
  
-:warning: *Note: None in figure below indicate that the program never run before.
+:warning: *Note: None in the figure below indicate that the program never run before.
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd.png" alt="Command Prompt"/>
@@ -235,7 +235,7 @@ Before getting started, complete the following prerequisites:
 
 ### **5.5 Delete Images**
 
-1. Run **delete_images.bat**. This batch file will execute **deleteImage.py** to delete all created Images in Huawei Cloud.
+1. Run **delete_images.bat**. This batch file will execute **deleteImage.py** Python file.
 2.  **deleteImage.py** will read Image ID from **resourse_list.xlsx** Excel file and use the ID to delete Image in Huawei Cloud.
 </br>
 <p align="center">
@@ -247,7 +247,7 @@ Before getting started, complete the following prerequisites:
 
 ### **5.6 Delete ECS**
 
-1.  Run **delete_servers.bat.** This batch file will execute **deleteServer.py** to delete all created Servers in Huawei Cloud. 
+1.  Run **delete_servers.bat.** This batch file will execute **deleteServer.py** Python file. 
 2.  **deleteServer.py** will read server ID from **resourse_list.xlsx** Excel file use the ID to delete server in Huawei Cloud.
 </br>
 <p align="center">
