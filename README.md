@@ -8,14 +8,14 @@ We are going to achieve the below objectives:
 
 1. Automate the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) using Huawei SDK.
 2. Automate the process of creating an Elastic Cloud Server (ECS) from the created image using Huawei SDK.
-3. Automate the process of resource cleaning using Huawei SDK.
+3. Automate the process of resource cleaning using Huawei SDK. </br>
 
 ## **2. Solution Overview**
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
 </p>
-<p align="center" f><i>Figure 2.0: Solution Overview<i></p>
- </br>
+<p align="center" f>_Figure 2.0: Solution Overview_****</p>
+</br>
 
 ## **3. Prerequisites**
 
@@ -26,7 +26,7 @@ Before getting started, complete the following prerequisites:
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/create_credentials.png" alt="Create Credentials"/>
 </p>
-<p align="center" f><i>Figure 3.0: Example of how to create Access Key<i></p>
+<p align="center" f><i>Figure 3.0: Example of how to create Access Key</i></p>
 <br/>
 
 2. To use **Huawei Cloud Python SDK** to access the APIs of a specific service, please make sure you have activated the service in the Huawei Cloud console (https://console.huaweicloud.com/?locale=en-us) if needed.
@@ -35,9 +35,9 @@ Before getting started, complete the following prerequisites:
 
  
 
-## **3. Folder Content**
+## **4. Folder Content**
 
-### **3.1 Batch File**
+### **4.1 Batch File**
 
 
 **Batch File**	
