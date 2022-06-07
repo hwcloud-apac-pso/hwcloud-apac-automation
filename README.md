@@ -11,9 +11,6 @@ We are going to achieve the below objectives:
 3. Automate the process of resource cleaning using Huawei SDK.
 
 ## **2. Solution Overview**
-
-
-![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png?raw=true)
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
 </p>
@@ -25,7 +22,12 @@ Before getting started, complete the following prerequisites:
 
 1. To use *Huawei Cloud Python SDK*, you must have a Huawei Cloud account as well as the Access Key and Secret Key of the Huawei Cloud account. You can create an Access Key in the Huawei Cloud console. You can obtain the AK/SK pair for your account at *My credentials > Access keys > Create Access key.*** ** **
 
-![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/create_credentials.png?raw=true)Figure 3.0: Example of how to create Access Key
+<figure>
+ <p align="center">
+    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/create_credentials.png" alt="Create Credentials"/>
+ </p>
+ <figcaption align="center">Figure 3.0: Example of how to create Access Key</figcaption>
+</figure>
 
 1. To use *Huawei Cloud Python SDK* to access the APIs of a specific service, please make sure you have activated the service in the Huawei Cloud console (https://console.huaweicloud.com/?locale=en-us) if needed.
 2. Huawei Cloud Python SDK requires *Python 3.3* *or later*, run the command *python --version* to check the version of Python. *If Python 3.3* or later is installed. skip step *4**.*
