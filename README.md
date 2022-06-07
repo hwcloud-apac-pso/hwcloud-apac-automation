@@ -5,7 +5,6 @@
 This Program will use Huawei Cloud Python SDK to automate the process of creating images from Cloud Backup and Recovery (CBR), creating Elastic Cloud Server (ECS) from created images, and deleting images and elastic cloud server (ECS).
  
 We are going to achieve the below objectives:
-gg
 1. Automate the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) using Huawei SDK.
 2. Automate the process of creating an Elastic Cloud Server (ECS) from the created image using Huawei SDK.
 3. Automate the process of resource cleaning using Huawei SDK. </br>
@@ -16,7 +15,7 @@ gg
 </p
 <p align="center"><i>Figure 2.0: Solution Overview</i></p>
 </br>
-xgr
+
 ## **3. Prerequisites**
 
 Before getting started, complete the following prerequisites:
@@ -68,7 +67,6 @@ Before getting started, complete the following prerequisites:
 
 <p align="center"><i>Table 4.0 :  Batch File (.bat)</i></p>
 <br/>
-
 
 ### **4.2 Python File**
 
@@ -188,12 +186,24 @@ Before getting started, complete the following prerequisites:
 
 ### **5.3 Configure Environment Variables**
 
-1. Run **config.bat**. This batch file will start Command Prompt and ask the user to input configuration as prompted.
+#### **5.3.1 Run config.bat batch file**
+
+1. Run *config.bat*. This batch file will start Command Prompt and ask the user to input parameters as prompted.
+2. Parameter input by the user will save in *the config.env* environment variable file. 
+3. Environment variables need to be declared first before proceeding to create Image, create ECS, delete Image, and Delete ECS.
+</br>
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd_config.png" alt="Command Prompt"/>
 </p>
 <p align="center"><i>Figure 5.4: Command Prompt to input configuration parameters.</i></p>
+</br>
+
+#### **5.3.2 Obtain VPC ID**
+
+1. On the console homepage, under *Network*, click *Virtual Private Cloud*.
+2. On the *Virtual Private Cloud* page, locate your mouse cursor on the VPC name
+3. The VPC ID will appear once the cursor hovers over the VPC name. After that, click the copy to clipboard icon beside the VPC ID to copy it.
 </br>
 
 <p align="center">
@@ -202,15 +212,24 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Figure 5.5: Example to obtain VPC ID</i></p>
 </br>
 
+#### **5.3.3 Obtain Subnet ID**
+
+1. On the console homepage, under *Network*, click *Virtual Private Cloud*.
+2. On the navigation pane at the left, click *Subnets*.
+3. On the displayed Subnets page, locate your mouse cursor on the Subnets name.
+4. The subnet ID will appear once the cursor hovers over the subnet name. After that, click the copy to clipboard icon beside the subnet ID to copy it.
+</br>
+
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/get_subnet_id.png" alt="Obtain Subnet ID"/>
 </p>
 <p align="center"><i>Figure 5.6: Example to obtain subnet ID</i></p>
 </br>
 
+#### **5.3.4 View Environment Variable file**
 
-2. The configuration parameter will pass to the environment variable file in **Code > config.env**.
-
+1. The configuration parameter is saved in the environment variable file in *Code > config.env.*
+</br>
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/config_env.png" alt="config.env"/>
 </p>
