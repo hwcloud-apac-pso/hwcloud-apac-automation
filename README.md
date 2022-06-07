@@ -12,7 +12,7 @@ We are going to achieve the below objectives:
 ## **2. Solution Overview**
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
-</p
+</p>
 <p align="center"><i>Figure 2.0: Solution Overview</i></p>
 </br>
 
