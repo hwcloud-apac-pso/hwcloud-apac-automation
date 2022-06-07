@@ -108,7 +108,7 @@ Table 3.3 :  Text File (.txt)
 2. Search for your desired version of Python. At the time of publishing this article, the latest Python 3 release is version 3.10.4, while the latest Python 2 release is version 2.7.18.
 
 
-![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/python_latest_version.png?raw=true)Figure 4.0: Python's latest release for Windows
+![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/python_latest-version.png?raw=true)Figure 4.0: Python's latest release for Windows
 
 
 1. Run the *Python Installer* once downloaded. (In this example, we have downloaded Python 3.7.3.)
@@ -186,7 +186,7 @@ Figure 4.9 : delete_images.bat
 1.  Run *delete_servers.bat.* This batch file will execute deleteServer.py to delete all created Servers in Huawei Cloud. 
 
 
-![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_server_bat?raw=true)
+![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_server_bat.png?raw=true)
                                             Figure 4.10 :  delete_servers.bat
 
 
