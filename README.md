@@ -70,7 +70,7 @@ Before getting started, complete the following prerequisites:
 <br/>
 
 
-**4.2 Python File**
+### **4.2 Python File**
 
 <table>
   <tr>
@@ -98,7 +98,7 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Table 4.1 :  Python File (.py)</i></p>
 <br/>
 
-**3.3 Microsoft Excel File**
+### **4.3 Microsoft Excel File**
 
 <table>
   <tr>
@@ -107,7 +107,7 @@ Before getting started, complete the following prerequisites:
   </tr>
   <tr>
     <td>ids_list.xlsx</td>
-    <td>Save details required to  create Images and ECS in Huawei Cloud.</b>.</td>
+    <td>Save details required to  create Images and ECS in Huawei Cloud.</b></td>
   </tr>
   <tr>
     <td>resource_list.xlsx</td>
@@ -118,7 +118,7 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Table 4.2 :  Microsoft Excel File (.xlsx)</i></p>
 <br/>
 
-**3.4 Text File**
+### **4.4 Text File**
 
 <table>
   <tr>
@@ -152,9 +152,9 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Figure 5.0:  Python's latest release for Windows</i></p>
 </br>
 
-1. Run the **Python Installer** once downloaded. (In this example, we have downloaded Python 3.7.3.)
-2. Make sure you select the **Install launcher for all users** and **Add Python 3.7** to PATH checkboxes. See **Figure 5.1**.
-3. Select **Install Now** – the recommended installation options.
+3. Run the **Python Installer** once downloaded. (In this example, we have downloaded Python 3.7.3.)
+4. Make sure you select the **Install launcher for all users** and **Add Python 3.7** to PATH checkboxes. See **Figure 5.1**.
+5. Select **Install Now** – the recommended installation options.
 
 
 <p align="center">
@@ -163,7 +163,7 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Figure 5.1:  Install launcher for all users and add Python to PATH</i></p>
 </br>
 
-1. The next dialog will prompt you to select whether to **Disable the path length limit**. Choosing this option will allow Python to bypass the 260-character MAX_PATH limit. Effectively, it will enable Python to use long path names.
+6. The next dialog will prompt you to select whether to **Disable the path length limit**. Choosing this option will allow Python to bypass the 260-character MAX_PATH limit. Effectively, it will enable Python to use long path names.
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/python_max_length_config.png" alt="Disable path length limit"/>
@@ -171,7 +171,7 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Figure 5.2:  Disable path length limit</i></p>
 </br>
 
-2. The *Disable path length* *limit* option will not affect any other system settings. Turning it on will resolve potential name-length issues that may arise with Python projects developed in Linux.
+7. The *Disable path length* *limit* option will not affect any other system settings. Turning it on will resolve potential name-length issues that may arise with Python projects developed in Linux.
 
 
 
@@ -221,7 +221,7 @@ Before getting started, complete the following prerequisites:
 ### **5.4 Create Images and ECS**
 
 1. Run **create_images_and_ecs.bat.** This batch file will execute **main.py** to create images and ECS.
-2. Input number of sheets to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. The **previous running** sheet number will also be shown in figure below. <span color="red">Note: None in figure below indicate that the program never run before.</span>
+2. Input number of sheets to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. The **previous running** sheet number will also be shown in figure below. <p color="red">Note: None in figure below indicate that the program never run before.</p>
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd.png" alt="Command Prompt"/>
