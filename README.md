@@ -29,7 +29,7 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Figure 3.0: Example of how to create Access Key</i></p>
 <br/>
 
-2. To use **Huawei Cloud Python SDK** to access the APIs of a specific service, please make sure you have activated the service in the [Huawei Cloud console] (https://console.huaweicloud.com/?locale=en-us) if needed.
+2. To use **Huawei Cloud Python SDK** to access the APIs of a specific service, please make sure you have activated the service in the [Huawei Cloud console]([url](https://console.huaweicloud.com/?locale=en-us)) if needed.
 3. Huawei Cloud Python SDK requires **Python 3.3 or later**, run the command **python --version** to check the version of Python. If **Python 3.3 or later** is installed. skip **step 4**.
 4. Install Python 3 and add Python to **PATH.** Open your browser and navigate to the [Downloads for Windows section] (https://www.python.org/downloads/windows/) of the [official Python website] (https://www.python.org/).
 
