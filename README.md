@@ -109,7 +109,8 @@ Before getting started, complete the following prerequisites:
     <td>ids_list.xlsx</td>
     <td>Save details required to  create Images and ECS in Huawei Cloud.</b>.</td>
   </tr>
-  <tr>resource_list.xlsx</td>
+  <tr>
+    <td>resource_list.xlsx</td>
     <td>Save Image ID and ECS ID  that successfully created. Failed Task will also be recorded in “Failed”  sheet.</b></td>
   </tr>
 </table>
@@ -128,7 +129,8 @@ Before getting started, complete the following prerequisites:
     <td>num.txt</td>
     <td>Save the counter to  determine which sheets will be used to create image.</b>.</td>
   </tr>
-  <tr>requirement.txt</td>
+  <tr>
+    <td>requirement.txt</td>
     <td>Save all the required python packages</b></td>
   </tr>
 </table>
@@ -141,7 +143,7 @@ Before getting started, complete the following prerequisites:
 
 ### **5.1 Install Python 3**
 
-1. Open your web browser and navigate to the Downloads for [Windows section] (https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).
+1. Open your web browser and navigate to the Downloads for [Windows section]([url](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).
 2. Search for your desired version of Python. At the time of publishing this article, the latest Python 3 release is version 3.10.4, while the latest Python 2 release is version 2.7.18.
 
 <p align="center">
