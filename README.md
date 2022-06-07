@@ -253,7 +253,7 @@ Before getting started, complete the following prerequisites:
 
 
 ### **5.5 Delete Images**
-Once the resources are no longer used, It’s a good idea to remove all the resources you created so Huawei Cloud doesn’t charge you for them. 
+:recycle: Once the resources are no longer used, It’s a good idea to remove all the resources you created so Huawei Cloud doesn’t charge you for them. 
 
 #### **5.5.1 Delete Images**
 1. Run **delete_images.bat**. This batch file will execute **deleteImage.py** Python file.
