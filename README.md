@@ -186,7 +186,8 @@ Figure 4.9 : delete_images.bat
 1.  Run *delete_servers.bat.* This batch file will execute deleteServer.py to delete all created Servers in Huawei Cloud. 
 
 
-![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_server_bat?raw=true)Figure 4.10 :  delete_servers.bat
+![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_server_bat?raw=true)
+                                            Figure 4.10 :  delete_servers.bat
 
 
  
