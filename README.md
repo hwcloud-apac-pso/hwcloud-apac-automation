@@ -1,6 +1,6 @@
-#Automation on Elastic Cloud Server Provisioning using a created image from Cloud Backup and Recovery
+# **Automation on Elastic Cloud Server Provisioning using a created image from Cloud Backup and Recovery**
 
-##1. Introduction
+## **1. Introduction**
 
 This Program will use Huawei Cloud Python SDK to automate the process of creating images from Cloud Backup and Recovery (CBR) and use the created image to provision Elastic Cloud Server (ECS) in Huawei Cloud.
  
@@ -10,13 +10,16 @@ We are going to achieve the below objectives:
 2. Automate the process of creating an Elastic Cloud Server (ECS) from the created image using Huawei SDK.
 3. Automate the process of resource cleaning using Huawei SDK.
 
-Solution Overview
+## **2. Solution Overview**
 
 
 ![alt text](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png?raw=true)
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
+</p>
 
 
-**2. Prerequisites**
+## **3. Prerequisites**
 
 Before getting started, complete the following prerequisites:
 
