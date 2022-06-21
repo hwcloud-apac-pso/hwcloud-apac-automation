@@ -1,19 +1,33 @@
 # **Automation on Elastic Cloud Server Provisioning using a created image from Cloud Backup and Recovery**
 
-## **1. Introduction**
+## **1.0 Problem Statement**
 
-This Program will use Huawei Cloud Python SDK to automate the process of creating images from Cloud Backup and Recovery (CBR), creating Elastic Cloud Server (ECS) from created images, and deleting images and elastic cloud server (ECS).
- 
-We are going to achieve the below objectives:
-1. Automate the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) using Huawei SDK.
-2. Automate the process of creating an Elastic Cloud Server (ECS) from the created image using Huawei SDK.
-3. Automate the process of resource cleaning using Huawei SDK. </br>
+Currently, the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) backup and creating Elastic Cloud Server (ECS) from the created images is done manually by the user using the Huawei Cloud console. 
+
+Users have to repeat the step from creating an image from CBR backup to creating ECS with the image created many times because there is a very huge number of backups that need to be restored. This is very time-consuming and might have human errors.
+
+## **1.1 Objective**
+
+In this artifact, we are going to achieve the below objectives:
+
+1. To automate the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) and creating an Elastic Cloud Server (ECS) from the created image using Huawei Python SDK.
+2. To automate the process of resource cleaning using Huawei Python SDK.
+3. To develop an automated program to reduce time consumption. 
+
 
 ## **2. Solution Overview**
+### **2.1 Objective #1: Automate image creation from CBR and ECS provisioning**
 <p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview1.png" alt="Solution Overview"/>
 </p>
-<p align="center"><i>Figure 2.0: Solution Overview</i></p>
+<p align="center"><i>Figure 2.0: image creation from CBR and ECS provisioning</i></p>
+</br>
+
+### **2.1 Objective #1: Automate image and ECS cleaning**
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview2.png" alt="Solution Overview"/>
+</p>
+<p align="center"><i>Figure 2.1: image and ECS cleaning</i></p>
 </br>
 
 ## **3. Prerequisites**
@@ -30,21 +44,59 @@ Before getting started, complete the following prerequisites:
 
 2. To use **Huawei Cloud Python SDK** to access the APIs of a specific service, please make sure you have activated the service in the [Huawei Cloud console](https://console.huaweicloud.com/?locale=en-us) if needed.
 3. Huawei Cloud Python SDK requires **Python 3.3 or later**, run the command **python --version** to check the version of Python. If **Python 3.3 or later** is installed. skip **step 4**.
-4. Install Python 3 and add Python to **PATH.** Open your browser and navigate to the [Downloads for Windows section](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).
 
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/check_python_version.png" alt="Create Credentials"/>
+</p>
+<p align="center"><i>Figure 3.0: Command Prompt check Python version</i></p>
+<br/>
+
+4. Install Python 3 and add Python to **PATH.** Open your browser and navigate to the [Downloads for Windows section](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).Navigate to the Using [Python on Windows section](https://docs.python.org/3/using/windows.html) for steps to install Python in the Windows environment.
+5. Please note that this program is only applicable for Windows environments only for now.
  
 
-## **4. Folder Content**
+## **4. Getting Started**
 
-### **4.1 Batch File**
+Before starting to automate the process of creating images and Elastic Cloud Server (ECS) in Huawei Cloud, some steps need to be done:
+
+1. Download Source File
+2. Install Python Packages
+3. Configure Environment Variable
+
+### **Download Source Code**
+
+1. Click [hwc_automation.zip](https://codeload.github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/zip/refs/heads/main)  to download the Source Code Zip archive file. Extract the Zip archive file after the download is complete.
+2. Check [File Content.docx](https://www.google.com) for the file content.
+
+
+### **Install Python Packages
+1. Open the *hwc_automation* folder you have downloaded and extracted it in the previous step.
+2. Inside the folder, find *install.bat* and double-click to run it. **
+3. This batch file will install all the Python Packages defined in *requirement.txt.*
+4. Python packages in *requirement.txt*
+  - huaweicloudsdkecs
+  - huaweicloudsdkims
+  - huaweicloudsdksmn
+  - huaweicloudsdksms
+  - requests
+  - python-dotenv
+  - openpyxl 
+  - pandas
+
+### **Configure Environment Variables**
+
+1. Environment variables need to be declared first before proceeding to create Image, create ECS, delete Image, and Delete ECS.
+2. Inside the **hwc_automation** folder, find **config.bat** and double-click to run it.
+3. This batch file will start Command Prompt and ask the user to input parameters as prompted.
+4. The parameters required and steps to obtain as shown below:
 
 <table>
   <tr>
-    <th><b>Batch File</b></th>
-    <th><b>Function</b></th>
+    <th><b>Parameter</b></th>
+    <th><b>Steps</b></th>
   </tr>
   <tr>
-    <td>config.bat</td>
+    <td>Access Key & Secret Key (AK/SK pair)</td>
    <td>To input configuration parameter and save to <b>Code > config.env</b> file.</td>
   </tr>
   <tr>
