@@ -97,7 +97,7 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
   </tr>
   <tr>
     <td>Access Key & Secret Key (AK/SK pair)</td>
-   <td>To input configuration parameter and save to <b>Code > config.env</b> file.</td>
+   <td>1. test </br> 2. test2 </br> 3. test3</td>
   </tr>
   <tr>
     <td>create_image_and_ecs.bat</td>
