@@ -23,7 +23,7 @@ In this artifact, we are going to achieve the below objectives:
 <p align="center"><i>Figure 2.0: image creation from CBR and ECS provisioning</i></p>
 </br>
 
-### **2.1 Objective #1: Automate image and ECS cleaning**
+### **2.2 Objective #1: Automate image and ECS cleaning**
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview2.png" alt="Solution Overview"/>
 </p>
@@ -69,7 +69,7 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
 2. Check [File Content.docx](https://www.google.com) for the file content.
 
 
-### **Install Python Packages
+### **Install Python Packages**
 1. Open the **hwc_automation** folder you have downloaded and extracted it in the previous step.
 2. Inside the folder, find **install.bat** and double-click to run it. **
 3. This batch file will install all the Python Packages defined in **requirement.txt.**
@@ -156,45 +156,91 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
 
 ### **Create Images and ECS**
 In this demo, we are going to automate the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) backup and creating an Elastic Cloud Server (ECS) from the created images. Step by step is as below:
-1.	Inside the hwc_automation folder, find create_image_and_ecs.bat and double click to run it.
-2.	This batch file will start a command prompt to show the number of sheets of the previous running and ask the user to input the number of sheets that need to be used in the current running as shown in Figure 5.0. *Note: None in the figure below indicate that the program never run before.
-3.	The input is used to determine which sheet in ids_list.xlsx is to be used in creating images and servers. For example, if we input 1, sheet1 in ids_list.xlsx will be used while if we input 2, sheet2 will be used accordingly. 
+1.	Inside the **hwc_automation** folder, find **create_image_and_ecs.bat** and double click to run it.
+2.	This batch file will start a command prompt to show the **number of sheets of the previous running** and ask the user to **input the number of sheets that need to be used in the current running** as shown in Figure 5.0. 
 
+> Note: None in the figure below indicate that the program never run before.
 
-### **5.4 Create Images and ECS**
-
-1. Run **create_images_and_ecs.bat.** This batch file will execute **main.py** to create images and ECS.
-2. Input sheet number to determine which sheet in **ids_list.xlsx** to be used in creating images and servers. 
-3. The **previous running** sheet number will also be shown in the command prompt to let the user know which number of the sheet is previously used to create images and server.
- 
-:warning: *Note: None in the figure below indicate that the program never run before.
+3.	The input is used to determine which sheet in **ids_list.xlsx** is to be used in creating images and servers. For example, if we input **1, sheet1** in **ids_list.xlsx** will be used while if we input **2, sheet2** will be used accordingly. 
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd.png" alt="Command Prompt"/>
 </p>
-<p align="center"><i>Figure 5.8: Command Prompt shows Previous running: None</i></p>
+<p align="center"><i>Figure 5.0: Command Prompt shows Previous running: None</i></p>
 </br>
 
+4. In this demo, we will use **sheet1** to create images and servers, so we input **1**.
 
-### **5.5 Delete Images**
-:recycle: Once the resources are no longer used, It’s a good idea to remove all the resources you created so Huawei Cloud doesn’t charge you for them. 
-
-#### **5.5.1 Delete Images**
-1. Run **delete_images.bat**. This batch file will execute **deleteImage.py** Python file.
-2.  **deleteImage.py** will read Image ID from **resourse_list.xlsx** Excel file and use the ID to delete Image in Huawei Cloud.
-</br>
 <p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_image_bat.png" alt="Batch file to delete images"/>
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/CBR_backup_details.png" alt="CBR backup details"/>
 </p>
-<p align="center"><i>Figure 5.9: delete_images.bat</i></p>
+<p align="center"><i>Figure 5.1: CBR backup details in Sheet1</i></p>
 </br>
 
-#### **5.5.2 Delete Server (ECS)**
+5.	After inputting the number of sheets, the batch file will continue with executing the **main.py** Python file to create Images and ECSs.
+6.	This Python file will retrieve the backup ID from **sheet1**, and use the backup ID to create an image and ECS.
+7.	Figure 5.2 below showed that the images and ECS are successfully created using **row 3 (6d8055a8-4375-46e4-a7e3-e57ba865f122)** and **row 4 (444fca5a-8a91-4398-b6fb-df9ba305e3ca)** backup ID.
 
-1.  Run **delete_servers.bat.** This batch file will execute **deleteServer.py** Python file. 
-2.  **deleteServer.py** will read server ID from **resourse_list.xlsx** Excel file use the ID to delete server in Huawei Cloud.
-</br>
 <p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/delete_server_bat.png" alt="Batch file to delete server"/>
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/success.png" alt="Image and ECS successfully created"/>
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/success1.png" alt="Image and ECS successfully created"/>
 </p>
-<p align="center"><i>Figure 5.10: delete_servers.bat</i></p>
+<p align="center"><i>Figure 5.2: Image and ECS successfully created</i></p>
+</br>
+
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/img_hwc.png" alt="IMG in HWC"/>
+</p>
+<p align="center"><i>Figure 5.3: Image successfully created in Huawei Cloud console</i></p>
+</br>
+
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/ecs_hwc.png" alt="ECS in HWC"/>
+</p>
+<p align="center"><i>Figure 5.4: ECS successfully created in Huawei Cloud console</i></p>
+</br>
+
+8.	If the image and ECS are successfully created, the Image ID and ECS ID will be saved in **resource_list.xlsx**. 
+
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/img_id_excel.png" alt="ECS in HWC"/>
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/ecs_id_excel.png" alt="Image and Server sheets in resource_list.xlsx"/>
+</p>
+<p align="center"><i>Figure 5.5: Image and Server sheets in resource_list.xlsx</i></p>
+</br>
+
+9.	Figure 5.4 below showed that the image was failed to create using **row 2 (00f0ff7a-b5b2-41fb-90d1-d2d348923c60)** backup ID.
+10.	The image creation might fail if:
+   a.	The backup ID is already registered as an image.
+   b.	The backup ID provided in Excel is invalid.
+
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/failed.png" alt="image creation failed"/>
+</p>
+<p align="center"><i>Figure 5.6: Image creation failed due to the backup ID already used to create an image.</i></p>
+</br>
+
+11.	If the image creation fails, the **vault ID** and **backup ID** will be saved in the **“Failed”** sheet in **resource_list.xlsx**. 
+12.	If the image is successfully created but ECS creation failed, the **vault ID, backup ID**, and image ID will be saved in the **“Failed”** sheet in **resource_list.xlsx**. 
+
+<p align="center">
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/failed_list_excel.png" alt="Failed sheets"/>
+</p>
+<p align="center"><i>Figure 5.6: Failed sheets in resource_list.xlsx.</i></p>
+</br>
+
+
+## 6. Resource Cleaning
+
+Once the resources are no longer used, It’s a good idea to remove all the resources you created so Huawei Cloud doesn’t charge you for them. 
+
+### Delete Images
+1.	Inside the hwc_automation folder, find delete_images.bat and double click to run it.
+2.	This batch file will execute the deleteImage.py Python File.
+3.	deleteImage.py will read the images’ ID from the resourse_list.xlsx Excel file and use the ID to delete Images in Huawei Cloud.
+
+### Delete Server (ECS)
+1.	 Run delete_servers.bat. This batch file will execute the deleteServer.py Python file.
+2.	deleteServer.py will read the servers’ ID from the resourse_list.xlsx Excel file and use the ID to delete servers in Huawei Cloud.
+
+
