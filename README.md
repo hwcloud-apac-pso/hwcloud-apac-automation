@@ -66,12 +66,12 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
 ### **Download Source Code**
 
 1. Click [hwc_automation.zip](https://codeload.github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/zip/refs/heads/main)  to download the Source Code Zip archive file. Extract the Zip archive file after the download is complete.
-2. Check [File Content.docx](https://www.google.com) for the file content.
+2. Check [File Content.docx](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Reference/File%20Content.docx) for the file content.
 
 
 ### **Install Python Packages**
 1. Open the **hwc_automation** folder you have downloaded and extracted it in the previous step.
-2. Inside the folder, find **install.bat** and double-click to run it. **
+2. Inside the folder, find **install.bat** and double-click to run it. 
 3. This batch file will install all the Python Packages defined in **requirement.txt.**
 4. Python packages in **requirement.txt**
   - huaweicloudsdkecs
@@ -100,7 +100,7 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
     <td>
       1. On the console homepage, hover over the username in the upper right corner and choose <b>My Credentials</b> from the drop-down list. </br>
       2. Choose <b>Access Key</b> from the navigation tab at the left and click <b>Create Access Key.</b></br> 
-      3. Click Download. 
+      3. Click Download. </br>
       4. Open the <b>credentials.csv</b> you have downloaded to obtain <b>AK/SK pair.</b>
     </td>
   </tr>
@@ -209,10 +209,10 @@ In this demo, we are going to automate the process of creating a Full-ECS image 
 <p align="center"><i>Figure 5.5: Image and Server sheets in resource_list.xlsx</i></p>
 </br>
 
-9.	Figure 5.4 below showed that the image was failed to create using **row 2 (00f0ff7a-b5b2-41fb-90d1-d2d348923c60)** backup ID.
+9.	Figure 5.6 below showed that the image was failed to create using **row 2 (00f0ff7a-b5b2-41fb-90d1-d2d348923c60)** backup ID.
 10.	The image creation might fail if:
-   a.	The backup ID is already registered as an image.
-   b.	The backup ID provided in Excel is invalid.
+  - The backup ID is already registered as an image.
+  - The backup ID provided in Excel is invalid.
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/failed.png" alt="image creation failed"/>
@@ -226,7 +226,7 @@ In this demo, we are going to automate the process of creating a Full-ECS image 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/failed_list_excel.png" alt="Failed sheets"/>
 </p>
-<p align="center"><i>Figure 5.6: Failed sheets in resource_list.xlsx.</i></p>
+<p align="center"><i>Figure 5.7: Failed sheets in resource_list.xlsx.</i></p>
 </br>
 
 
