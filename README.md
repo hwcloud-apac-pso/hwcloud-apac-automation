@@ -48,7 +48,7 @@ Before getting started, complete the following prerequisites:
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/check_python_version.png" alt="Create Credentials"/>
 </p>
-<p align="center"><i>Figure 3.0: Command Prompt check Python version</i></p>
+<p align="center"><i>Figure 3.1: Command Prompt check Python version</i></p>
 <br/>
 
 4. Install Python 3 and add Python to **PATH.** Open your browser and navigate to the [Downloads for Windows section](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).Navigate to the Using [Python on Windows section](https://docs.python.org/3/using/windows.html) for steps to install Python in the Windows environment.
@@ -70,10 +70,10 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
 
 
 ### **Install Python Packages
-1. Open the *hwc_automation* folder you have downloaded and extracted it in the previous step.
-2. Inside the folder, find *install.bat* and double-click to run it. **
-3. This batch file will install all the Python Packages defined in *requirement.txt.*
-4. Python packages in *requirement.txt*
+1. Open the **hwc_automation** folder you have downloaded and extracted it in the previous step.
+2. Inside the folder, find **install.bat** and double-click to run it. **
+3. This batch file will install all the Python Packages defined in **requirement.txt.**
+4. Python packages in **requirement.txt**
   - huaweicloudsdkecs
   - huaweicloudsdkims
   - huaweicloudsdksmn
@@ -98,209 +98,67 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
   <tr>
     <td>Access Key & Secret Key (AK/SK pair)</td>
     <td>
-      1. On the console homepage, hover over the username in the upper right corner and choose My Credentials from the drop-down list. </br>
-      2. Choose Access Key from the navigation tab at the left and click Create Access Key.</br> 
+      1. On the console homepage, hover over the username in the upper right corner and choose <b>My Credentials</b> from the drop-down list. </br>
+      2. Choose <b>Access Key</b> from the navigation tab at the left and click <b>Create Access Key.</b></br> 
       3. Click Download. 
-      4. Open the credentials.csv you have downloaded to obtain AK/SK pair.
+      4. Open the <b>credentials.csv</b> you have downloaded to obtain <b>AK/SK pair.</b>
     </td>
   </tr>
   <tr>
     <td>Admin Pass</td>
     <td>
-       1. On the console homepage, under Management & Governance, click Identity and Access Management. </br>
-       2. In the navigation pane on the left, choose Account Security. </br>
-       3. On the Account Security Settings page, select Password Policy in the navigation pane. </br>
-       4. Follow the Password Policy to set Admin Pass. Admin Pass is required to create ECS and login into the ECS.
+       1. On the console homepage, under <b>Management & Governance</b>, click <b>Identity and Access Management</b>. </br>
+       2. In the navigation pane on the left, choose <b>Account Security</b>. </br>
+       3. On the <b>Account Security</b> Settings page, select <b>Password Policy</b> in the navigation pane. </br>
+       4. Follow the <b>Password Policy</b> to set Admin Pass. Admin Pass is required to create ECS and login into the ECS.
    </td>
   </tr>
  <tr>
     <td>VPC ID</td>
     <td>
-       1. On the console homepage, under Network, click Virtual Private Cloud.
-       2. 
-       3. 
+       1. On the console homepage, under <b>Network</b>, click <b>Virtual Private Cloud.</b> </br>
+       2. The VPC ID will appear once the cursor hovers over the VPC name.  </br>
+       3. After that, click the copy to clipboard icon beside the VPC ID to copy it.
     </td>
   </tr>
  <tr>
-    <td>delete_images.bat</td>
-    <td>Execute *deleteImage.py* to delete all Images from <b>resource_list.xlsx.</b></td>
-  </tr>
- <tr>
-    <td>install.bat</td>
-    <td>Install all the Python  Package defined in <b>requirement.txt.</b></td>
-  </tr>
-</table>
-
-<p align="center"><i>Table 4.0 :  Batch File (.bat)</i></p>
-<br/>
-
-### **4.2 Python File**
-
-<table>
-  <tr>
-    <th><b>Python File</b></th>
-    <th><b>Function</b></th>
-  </tr>
-  <tr>
-    <td>main.py</td>
-    <td>Create Image from CBR backup  and use the created image to provision ECS. ECS and Image ID are saved to <b>resource_list.xlsx</b>.</td>
-  </tr>
-  <tr>
-    <td>deleteServer.py</td>
-    <td>Delete all servers in <b>resource_list.xlsx.</b></td>
-  </tr>
- <tr>
-    <td>deleteImage.py</td>
-    <td>Delete all images in <b>resource_list.xlsx.</b></td>
-  </tr>
- <tr>
-    <td>utils.py	</td>
-    <td>Python File to store all functions defined.</b></td>
+    <td>Subnet ID</td>
+    <td>
+       1. On the console homepage, under <b>Network</b>, click <b>Virtual Private Cloud</b>.</br>
+       2. On the navigation pane at the left, click Subnets.</br>
+       3. On the displayed Subnets page, locate your mouse cursor on the Subnets name.</br>
+       4. The subnet ID will appear once the cursor hovers over the subnet name. After that, click the copy to clipboard icon beside the subnet ID to copy it.
+   </td>
   </tr>
 </table>
-
-<p align="center"><i>Table 4.1 :  Python File (.py)</i></p>
-<br/>
-
-### **4.3 Microsoft Excel File**
-
-<table>
-  <tr>
-    <th><b>Microsoft Excel File</b></th>
-    <th><b>Function</b></th>
-  </tr>
-  <tr>
-    <td>ids_list.xlsx</td>
-    <td>Save details required to  create Images and ECS in Huawei Cloud.</b></td>
-  </tr>
-  <tr>
-    <td>resource_list.xlsx</td>
-    <td>Save Image ID and ECS ID  that successfully created. Failed Task will also be recorded in “Failed”  sheet.</b></td>
-  </tr>
-</table>
-
-<p align="center"><i>Table 4.2 :  Microsoft Excel File (.xlsx)</i></p>
-<br/>
-
-### **4.4 Text File**
-
-<table>
-  <tr>
-    <th><b>TextFile</b></th>
-    <th><b>Function</b></th>
-  </tr>
-  <tr>
-    <td>num.txt</td>
-    <td>Save the counter to  determine which sheets will be used to create image.</b>.</td>
-  </tr>
-  <tr>
-    <td>requirement.txt</td>
-    <td>Save all the required python packages</b></td>
-  </tr>
-</table>
-
-<p align="center"><i>Table 4.3 :  Text File (.txt)</i></p>
-<br/>
-
-
-## **5. Getting Start**
-
-### **5.1 Install Python 3**
-
-1. Open your web browser and navigate to the Downloads for [Windows section](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).
-2. Search for your desired version of Python. At the time of publishing this article, the latest Python 3 release is version 3.10.4, while the latest Python 2 release is version 2.7.18.
-
-<p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/python_latest-version.png" alt="Python Latest Release"/>
-</p>
-<p align="center"><i>Figure 5.0:  Python's latest release for Windows</i></p>
-</br>
-
-3. Run the **Python Installer** once downloaded. (In this example, we have downloaded Python 3.7.3.)
-4. Make sure you select the **Install launcher for all users** and **Add Python 3.7** to PATH checkboxes. See **Figure 5.1**.
-5. Select **Install Now** – the recommended installation options.
-
-
-<p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/python_path_config.png" alt="Add Python to PATH"/>
-</p>
-<p align="center"><i>Figure 5.1:  Install launcher for all users and add Python to PATH</i></p>
-</br>
-
-6. The next dialog will prompt you to select whether to **Disable the path length limit**. Choosing this option will allow Python to bypass the 260-character MAX_PATH limit. Effectively, it will enable Python to use long path names.
-
-<p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/python_max_length_config.png" alt="Disable path length limit"/>
-</p>
-<p align="center"><i>Figure 5.2:  Disable path length limit</i></p>
-</br>
-
-7. The *Disable path length* *limit* option will not affect any other system settings. Turning it on will resolve potential name-length issues that may arise with Python projects developed in Linux.
-
-
-
-### **5.2 Install Python Packages**
-
-1. Run **install.bat.** This batch file will install all the Python Packages defined in **requirement.txt.**
-
-<p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/install_bat.png" alt="Batch file to install python packages"/>
-</p>
-<p align="center"><i>Figure 5.3: install.bat & requirement.txt</i></p>
-</br>
-
-
-### **5.3 Configure Environment Variables**
-
-#### **5.3.1 Run config.bat batch file**
-
-1. Run *config.bat*. This batch file will start Command Prompt and ask the user to input parameters as prompted.
-2. Parameter input by the user will save in *the config.env* environment variable file. 
-3. Environment variables need to be declared first before proceeding to create Image, create ECS, delete Image, and Delete ECS.
-</br>
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/cmd_config.png" alt="Command Prompt"/>
 </p>
-<p align="center"><i>Figure 5.4: Command Prompt to input configuration parameters.</i></p>
-</br>
-
-#### **5.3.2 Obtain VPC ID**
-
-1. On the console homepage, under **Network**, click **Virtual Private Cloud**.
-2. On the **Virtual Private Cloud** page, locate your mouse cursor on the VPC name
-3. The VPC ID will appear once the cursor hovers over the VPC name. After that, click the copy to clipboard icon beside the VPC ID to copy it.
+<p align="center"><i>Figure 4.0: Command Prompt to input configuration parameters.</i></p>
 </br>
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/get_vpc_id.png" alt="Obtain VPC ID"/>
 </p>
-<p align="center"><i>Figure 5.5: Example to obtain VPC ID</i></p>
-</br>
-
-#### **5.3.3 Obtain Subnet ID**
-
-1. On the console homepage, under **Network**, click **Virtual Private Cloud**.
-2. On the navigation pane at the left, click **Subnets**.
-3. On the displayed Subnets page, locate your mouse cursor on the Subnets name.
-4. The subnet ID will appear once the cursor hovers over the subnet name. After that, click the copy to clipboard icon beside the subnet ID to copy it.
+<p align="center"><i>Figure 4.1: Example to obtain VPC ID</i></p>
 </br>
 
 <p align="center">
    <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/get_subnet_id.png" alt="Obtain Subnet ID"/>
 </p>
-<p align="center"><i>Figure 5.6: Example to obtain subnet ID</i></p>
+<p align="center"><i>Figure 4.2: Example to obtain subnet ID</i></p>
 </br>
 
-#### **5.3.4 View Environment Variable file**
+5.	Parameter input by the user will save in the **config.env** environment variable file. You may open the **hwc_automation > Code > config.env** file to verify that the parameters are correctly declared.
 
-1. The configuration parameter is saved in the environment variable file in *Code > config.env.*
-</br>
-<p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/config_env.png" alt="config.env"/>
-</p>
-<p align="center"><i>Figure 5.7: config.env file stores environment variables</i></p>
-</br>
+## **5. Demonstration of Automation**
+
+### **Create Images and ECS**
+In this demo, we are going to automate the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) backup and creating an Elastic Cloud Server (ECS) from the created images. Step by step is as below:
+1.	Inside the hwc_automation folder, find create_image_and_ecs.bat and double click to run it.
+2.	This batch file will start a command prompt to show the number of sheets of the previous running and ask the user to input the number of sheets that need to be used in the current running as shown in Figure 5.0. *Note: None in the figure below indicate that the program never run before.
+3.	The input is used to determine which sheet in ids_list.xlsx is to be used in creating images and servers. For example, if we input 1, sheet1 in ids_list.xlsx will be used while if we input 2, sheet2 will be used accordingly. 
 
 
 ### **5.4 Create Images and ECS**
