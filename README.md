@@ -51,7 +51,7 @@ Before getting started, complete the following prerequisites:
 <p align="center"><i>Figure 3.1: Command Prompt check Python version</i></p>
 <br/>
 
-4. Install Python 3 and add Python to **PATH.** Open your browser and navigate to the [Downloads for Windows section](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/).Navigate to the Using [Python on Windows section](https://docs.python.org/3/using/windows.html) for steps to install Python in the Windows environment.
+4. Install Python 3 and add Python to **PATH.** Open your browser and navigate to the [Downloads for Windows section](https://www.python.org/downloads/windows/) of the [official Python website](https://www.python.org/). Navigate to the Using [Python on Windows section](https://docs.python.org/3/using/windows.html) for steps to install Python in the Windows environment.
 5. Please note that this program is only applicable for Windows environments only for now.
  
 
@@ -66,7 +66,7 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
 ### **Download Source Code**
 
 1. Click [hwc_automation.zip](https://codeload.github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/zip/refs/heads/main)  to download the Source Code Zip archive file. Extract the Zip archive file after the download is complete.
-2. Check [File Content.docx](https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Reference/File%20Content.docx) for the file content.
+2. Check [File Content.docx](https://raw.githubusercontent.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/main/Reference/File%20Content.docx) for the file content.
 
 
 ### **Install Python Packages**
