@@ -2,9 +2,9 @@
 
 ## **1.0 Problem Statement**
 
-Currently, the process of creating a Full-ECS image from Cloud Backup and Recovery (CBR) backup and creating Elastic Cloud Server (ECS) from the created images is done manually by the user using the Huawei Cloud console. 
+At the beginning, customer planned to use the existing server in Huawei Cloud Singapore region to perform data restoration from Cloud Backup and Recovery (CBR) and use Server Migration Service (SMS) to migrate restored Elastic Cloud Server (ECS) to CAE Malaysia. Unfortunately, all the existing server has been destroyed by customer and the proposed plan is not going to work anymore. The only solution for CBR migration is to create a Full ECS private image from CBR backup and use created image to provision a new ECS, then only perform migration using SMS to CAE. 
 
-Users have to repeat the step from creating an image from CBR backup to creating ECS with the image created many times because there is a very huge number of backups that need to be restored. This is very time-consuming and might have human errors.
+However, the process of creating a Full-ECS image from CBR backup and creating ECS from the created images need to be done manually by customers using the Huawei Cloud console. Customers have to repeat the step from creating an image from CBR backup to creating ECS with the image created multiple times because there are 134 backups that need to be restored. This is very time-consuming and might have human errors.
 
 ## **1.1 Objective**
 
@@ -244,3 +244,31 @@ Once the resources are no longer used, It’s a good idea to remove all the reso
 2.	deleteServer.py will read the servers’ ID from the resourse_list.xlsx Excel file and use the ID to delete servers in Huawei Cloud.
 
 
+## 7. Conclusion
+## 7.0 Achievements
+Throughout this program, customer successfully migrate CBR backup from Huawei Cloud Singapore Region to Malaysia CAE. All the objective of the artifact have also been achieved. Below are the objectives and achievements of this artifact:
+
+<table>
+  <tr>
+    <th><b>Objective</b></th>
+    <th><b>Achievement</b></th>
+  </tr>
+  <tr>
+    <td>To automate the process of creating a Full-ECS image from CBR and creating an ECS from the created image using Huawei Python SDK.</td>
+    <td>
+      Creating image from CBR and provisioning ECS with image are successfully automated using Python SDK. Repetitious task is reduced from 134 times to 26 times. By default, the task of creating image from CBR and provisioning with image need to do 134 times, but with this program, the task can be done by batch, approximately two to seven ECS per batch. 
+    </td>
+  </tr>
+  <tr>
+    <td>To automate the process of resource cleaning using Huawei Python SDK.</td>
+    <td>
+       Resources cleaning such as delete image and delete ECS are successfully automated using Python SDK. The resources can be deleted with only one click. (run the deleteServer.bat and deleteImage.bat batch file)
+   </td>
+  </tr>
+ <tr>
+    <td>To develop an automated program to reduce time consumption. </td>
+    <td>
+        The time required is reduced by 5 times, arround 81.6% faster compare to manual way.     
+    </td>
+  </tr>
+</table>
