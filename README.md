@@ -97,15 +97,29 @@ Before starting to automate the process of creating images and Elastic Cloud Ser
   </tr>
   <tr>
     <td>Access Key & Secret Key (AK/SK pair)</td>
-   <td>1. test </br> 2. test2 </br> 3. test3</td>
+    <td>
+      1. On the console homepage, hover over the username in the upper right corner and choose My Credentials from the drop-down list. </br>
+      2. Choose Access Key from the navigation tab at the left and click Create Access Key.</br> 
+      3. Click Download. 
+      4. Open the credentials.csv you have downloaded to obtain AK/SK pair.
+    </td>
   </tr>
   <tr>
-    <td>create_image_and_ecs.bat</td>
-    <td>Execute *main.py* python file to create Image from CBR backup and then use  the created image to provision ECS.</td>
+    <td>Admin Pass</td>
+    <td>
+       1. On the console homepage, under Management & Governance, click Identity and Access Management. </br>
+       2. In the navigation pane on the left, choose Account Security. </br>
+       3. On the Account Security Settings page, select Password Policy in the navigation pane. </br>
+       4. Follow the Password Policy to set Admin Pass. Admin Pass is required to create ECS and login into the ECS.
+   </td>
   </tr>
  <tr>
-    <td>delete_servers.bat</td>
-    <td>Execute *deleteImage.py* to delete all Images from <b>resource_list.xlsx.</b></td>
+    <td>VPC ID</td>
+    <td>
+       1. On the console homepage, under Network, click Virtual Private Cloud.
+       2. 
+       3. 
+    </td>
   </tr>
  <tr>
     <td>delete_images.bat</td>
