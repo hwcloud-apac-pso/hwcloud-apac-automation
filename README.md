@@ -18,7 +18,7 @@ In this artifact, we are going to achieve the below objectives:
 ## **2. Solution Overview**
 ### **Objective #1: Automate image creation from CBR and ECS provisioning**
 <p align="center">
-   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview1.png" alt="Solution Overview"/>
+   <img src="https://github.com/terraform-hwcloud-apac-pso-modules/hwcloud-apac-automation/blob/main/Image/solution_overview.png" alt="Solution Overview"/>
 </p>
 <p align="center"><i>Figure 2.0: image creation from CBR and ECS provisioning</i></p>
 </br>
