@@ -245,8 +245,8 @@ Once the resources are no longer used, It’s a good idea to remove all the reso
 
 
 ## 7. Conclusion
-## 7.0 Achievements
-Throughout this program, customer successfully migrate CBR backup from Huawei Cloud Singapore Region to Malaysia CAE. All the objective of the artifact have also been achieved. Below are the objectives and achievements of this artifact:
+
+By using the tool that I built above, customer successfully migrate CBR backup from Huawei Cloud Singapore Region to Malaysia CAE. All the objectives of the artifact have also been achieved. Below are the objectives and achievements of this artifact:
 
 <table>
   <tr>
