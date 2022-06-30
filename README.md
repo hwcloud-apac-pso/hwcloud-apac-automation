@@ -256,19 +256,19 @@ By using the tool that I built above, customer successfully migrate CBR backup f
   <tr>
     <td>To automate the process of creating a Full-ECS image from CBR and creating an ECS from the created image using Huawei Python SDK.</td>
     <td>
-      Creating image from CBR and provisioning ECS with image are successfully automated using Python SDK. Repetitious task is reduced from 134 times to 26 times. By default, the task of creating image from CBR and provisioning with image need to do 134 times, but with this program, the task can be done by batch, approximately two to seven ECS per batch. 
+      Creating image from CBR and provisioning ECS with image are successfully automated using Python SDK. Repetitious task is reduced from </b>134 times to 26 times.<b> By default, the task of creating image from CBR and provisioning with image need to do 134 times, but with this program, the task can be done by batch, approximately <b>two to seven ECS per batch. </b>
     </td>
   </tr>
   <tr>
     <td>To automate the process of resource cleaning using Huawei Python SDK.</td>
     <td>
-       Resources cleaning such as delete image and delete ECS are successfully automated using Python SDK. The resources can be deleted with only one click. (run the deleteServer.bat and deleteImage.bat batch file)
+       Resources cleaning such as delete image and delete ECS are successfully automated using Python SDK. The resources can be deleted with only <b>one click.</b> (run the deleteServer.bat and deleteImage.bat batch file)
    </td>
   </tr>
  <tr>
     <td>To develop an automated program to reduce time consumption. </td>
     <td>
-        The time required is reduced by 5 times, arround 81.6% faster compare to manual way.     
+        The time required is reduced by <b>5 times</b>, arround <b>81.6%</b> faster compare to manual way.     
     </td>
   </tr>
 </table>
