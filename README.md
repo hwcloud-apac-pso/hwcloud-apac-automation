@@ -235,13 +235,13 @@ In this demo, we are going to automate the process of creating a Full-ECS image 
 Once the resources are no longer used, It’s a good idea to remove all the resources you created so Huawei Cloud doesn’t charge you for them. 
 
 ### Delete Images
-1.	Inside the hwc_automation folder, find delete_images.bat and double click to run it.
-2.	This batch file will execute the deleteImage.py Python File.
-3.	deleteImage.py will read the images’ ID from the resourse_list.xlsx Excel file and use the ID to delete Images in Huawei Cloud.
+1.	Inside the **hwc_automation** folder, find **delete_images.bat** and double click to run it.
+2.	This batch file will execute the **deleteImage.py** Python File.
+3.	**deleteImage.py** will read the images’ ID from the **resourse_list.xlsx** Excel file and use the ID to delete Images in Huawei Cloud.
 
 ### Delete Server (ECS)
-1.	 Run delete_servers.bat. This batch file will execute the deleteServer.py Python file.
-2.	deleteServer.py will read the servers’ ID from the resourse_list.xlsx Excel file and use the ID to delete servers in Huawei Cloud.
+1.	 Run delete_servers.bat. This batch file will execute the **deleteServer.py** Python file.
+2.	**deleteServer.py** will read the servers’ ID from the **resourse_list.xlsx** Excel file and use the ID to delete servers in Huawei Cloud.
 
 
 ## 7. Conclusion
@@ -256,7 +256,7 @@ By using the tool that I built above, customer successfully migrate CBR backup f
   <tr>
     <td>To automate the process of creating a Full-ECS image from CBR and creating an ECS from the created image using Huawei Python SDK.</td>
     <td>
-      Creating image from CBR and provisioning ECS with image are successfully automated using Python SDK. Repetitious task is reduced from </b>134 times to 26 times.<b> By default, the task of creating image from CBR and provisioning with image need to do 134 times, but with this program, the task can be done by batch, approximately <b>two to seven ECS per batch. </b>
+      Creating image from CBR and provisioning ECS with image are successfully automated using Python SDK. Repetitious task is reduced from <b>134 times to 26 times.</b> By default, the task of creating image from CBR and provisioning with image need to do 134 times, but with this program, the task can be done by batch, approximately <b>two to seven ECS per batch. </b>
     </td>
   </tr>
   <tr>
